@@ -1,9 +1,11 @@
 # Testsy
 
-Check releases, investigate failed runs and preserve regression coverage.
+Testsy runs QA tests written in plain English on websites and on iOS and Android apps, and returns a verdict for every check with its evidence: a replay, video, the values it saw, console and network.
 
-Documentation: https://testsy.dev/docs/mcp/
+Documentation: https://testsy.dev/docs/mcp/ · Sign up: https://app.testsy.dev
 
-Install with `gemini extensions install https://github.com/testsy-ai/testsy-gemini-extension`. Supply the sensitive Testsy API key setting when prompted. Restart the CLI and inspect its MCP and skill lists.
+This Gemini CLI extension adds the Testsy MCP server and three skills: check a release, investigate a failed run, and turn a fixed bug into a saved regression test.
 
-This is an integration package prepared for local testing. A directory listing or live-client validation is not implied. Keep API keys out of prompts and version control. Runs use the workspace allowance and perform the test's actions. MIT applies to these integration files only.
+Install with `gemini extensions install https://github.com/testsy-ai/testsy-gemini-extension`. Enter a Testsy workspace API key (from https://app.testsy.dev) when prompted; it is stored as a sensitive setting. Restart the CLI and check its MCP and skill lists.
+
+Keep API keys in your secret store, out of prompts and version control. A run uses the workspace allowance and performs real actions on the site or app it is pointed at, so use it on apps and accounts you are allowed to test. These integration files are MIT licensed.
